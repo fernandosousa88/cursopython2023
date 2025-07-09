@@ -9,3 +9,8 @@ de caracteres da str
 """
 variavel = 'Olá mundo'
 print(variavel[::-1])
+
+
+teste= 'Fernando'
+print(teste[::-1])
+
