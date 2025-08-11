@@ -1,4 +1,4 @@
-frase = 'aaaaooo'
+frase = 'O python é uma linguagem de programação multiparadigma. Python foi criado por Guido Van Rossum.'
 
 i = 0
 qtd_apareceu_mais_vezes = 0
