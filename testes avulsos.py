@@ -1,4 +1,6 @@
-# # frase = 'aaaooo'
+# frase = 'aaaooo'
+# print(len(frase))
+
 # # i = 0
 
 # # qtd_mais_vezes = 0
@@ -76,15 +78,20 @@
 
 frase = 'O python é uma linguagem de programação multiparadigma. Python foi criado por Guido Van Rossum.'
 
-print(frase.count('uma'))
+# print(frase.count('uma'))
 
-i = 0
-letra_nova = ''
-for letra in frase:
-    letra_nova += '*'
-    print(letra)
-    i += 1
-print(letra_nova)
+# i = 0
+# letra_nova = ''
+# # for letra in frase:
+#     letra_nova += '*'
+#     print(letra)
+#     i += 1
+# print(letra_nova)
 
+lista = ['Maria', 'Helena', 'Luiz']
+i = range(len(lista))
+print(i)
 
+for nome in lista:
+    print(i, nome)
 
