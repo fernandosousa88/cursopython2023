@@ -27,7 +27,7 @@
       "source.organizeImports": "explicit"
     }
   },
-  "python.languageServer": "Pylance",
+  "python.languageServer": "None",
   "python.formatting.autopep8Args": [
     "--indent-size=4",
     "--max-line-length=80"
@@ -49,5 +49,13 @@
   },
   // "python.defaultInterpreterPath": "./venv/bin/python",
   "python.analysis.typeCheckingMode": "basic",
-  "cSpell.enabled": true
+  "cSpell.enabled": true,
+  "cursorpyright.analysis.diagnosticSeverityOverrides": {
+    "reportUnknownMemberType": "none",
+    "reportUnknownArgumentType": "none",
+    "reportUnknownVariableType": "none",
+    "reportUnknownLambdaType": "none",
+    "reportUnknownParameterType": "none"
+  },
+  "cursorpyright.analysis.typeCheckingMode": "basic"
 }
