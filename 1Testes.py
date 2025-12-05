@@ -1,8 +1,9 @@
+valor_1 = input('Digite um valor: ')
+valor_2 = input('Digite outro valor: ')
 
-nome = 'Fernando'
-altura_metros = 1.75
-peso = 108
-
-imc = peso / altura_metros ** 2
-
-print(f'{nome} tem {altura_metros} de altura e pesa {peso} kg e seu IMC é {imc:.2f}')
+if valor_1 >= valor_2:
+    print(f' O valor 1 é maior ou igual que o valor 2')
+elif valor_1 == valor_2:
+    print(f' O valor 1 é igual ao valor 2')
+else:
+    print(f' O valor 2 é maior ou igual que o valor 1')
