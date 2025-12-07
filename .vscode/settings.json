@@ -57,5 +57,6 @@
     "reportUnknownLambdaType": "none",
     "reportUnknownParameterType": "none"
   },
-  "cursorpyright.analysis.typeCheckingMode": "basic"
+  "cursorpyright.analysis.typeCheckingMode": "basic",
+  "python.REPL.enableREPLSmartSend": false
 }
