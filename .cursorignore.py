@@ -127,26 +127,148 @@
 #     print(lista[i], 'Seu indice é ' ,i)
 #     i += 1
 
-import os
 
-lista = []
-# opcao = input('Selecione uma opção: ')
+#----------------#
+# import re
+# import sys
 
-while True:
-    print('Selecione uma opção: ')
-    opcao = input('[i]nserir, [a]pagar, [l]istar ')
+# # Entrada de dados
+# entrada = input("Informe seu CPF: ")
 
-    if opcao.startswith('i'):
-        os.system('clear')
-        valor = input('Digite o item que gostaria de inserir: ')
-        lista.append(valor) 
+# # AJUSTE 1: Correção do Regex. Usar '^' e não 'ˆ'.
+# # Isso remove tudo que não for número (pontos, traços, espaços).
+# cpf_enviado = re.sub(
+#     r'[^0-9]',
+#     '',
+#     entrada
+# )
 
-    if opcao.startswith('a'):
-        os.system('clear')
-        valor = input('Digite o item que gostaria de alterar: ')
+# # Verifica se a entrada tem dados suficientes ou se são números repetidos
+# # (Ex: 111.111.111-11 passa no cálculo matemático, mas é inválido)
+# input_repetido = cpf_enviado == cpf_enviado[0] * len(cpf_enviado)
+
+# if input_repetido:
+#     print('Você enviou dados sequenciais (ex: 111.111...). Isso é inválido.')
+#     sys.exit() # Encerra o programa
+
+# # Pega apenas os 9 primeiros dígitos para calcular
+# nove_digitos = cpf_enviado[:9]
+# contador_regressivo_1 = 10
+
+# # --- Primeiro Dígito ---
+# resultado_1 = 0
+# for digito in nove_digitos:
+#     resultado_1 += int(digito) * contador_regressivo_1
+#     contador_regressivo_1 -= 1
+
+# digito_1 = (resultado_1 * 10) % 11
+# digito_1 = digito_1 if digito_1 <= 9 else 0
+
+# # --- Segundo Dígito ---
+# # dez_digitos = nove_digitos + str(digito_1)
+# # contador_regressivo_2 = 11
+
+# # resultado_2 = 0
+# # for digito in dez_digitos:
+# #     resultado_2 += int(digito) * contador_regressivo_2
+# #     contador_regressivo_2 -= 1
+
+# # digito_2 = (resultado_2 * 10) % 11
+# # digito_2 = digito_2 if digito_2 <= 9 else 0
+
+# # # Monta o CPF calculado baseado nos 9 primeiros números
+# # cpf_gerado_pelo_calculo = f'{nove_digitos}{digito_1}{digito_2}'
+
+# # # Exibe o que foi calculado
+# # # print(f'CPF calculado: {nove_digitos}-{digito_1}{digito_2}')
+
+# # # AJUSTE 2: Compara o CPF limpo enviado pelo usuário com o calculado
+# # if cpf_enviado == cpf_gerado_pelo_calculo:
+# #     print(f'O CPF {entrada} é VÁLIDO')
+# # else:
+# #     print(f'O CPF {entrada} NÃO é válido')
 
 
-    if opcao.startswith('l'):
-        os.system('clear')
-        print(enumerate(lista))
+# #----------------#
+# # Gerador de cpf
+# import re
+# import sys
+# import random
 
+# # Entrada de dados
+# for i in range(10):
+#     nove_digitos = ''
+#     for i in range(9):
+#         nove_digitos += str(random.randint(0, 9))
+
+#     contador_regressivo_1 = 10
+
+#     # --- Primeiro Dígito ---
+#     resultado_1 = 0
+#     for digito in nove_digitos:
+#         resultado_1 += int(digito) * contador_regressivo_1
+#         contador_regressivo_1 -= 1
+
+#     digito_1 = (resultado_1 * 10) % 11
+#     digito_1 = digito_1 if digito_1 <= 9 else 0
+
+#     # --- Segundo Dígito ---
+#     dez_digitos = nove_digitos + str(digito_1)
+#     contador_regressivo_2 = 11
+
+#     resultado_2 = 0
+#     for digito in dez_digitos:
+#         resultado_2 += int(digito) * contador_regressivo_2
+#         contador_regressivo_2 -= 1
+
+#     digito_2 = (resultado_2 * 10) % 11
+#     digito_2 = digito_2 if digito_2 <= 9 else 0
+
+#     # Monta o CPF calculado baseado nos 9 primeiros números
+#     cpf_gerado_pelo_calculo = f'{nove_digitos}-{digito_1}{digito_2}'
+#     print(cpf_gerado_pelo_calculo)
+
+#     #----------------#
+
+# função para multiplicar todos os argumentos nào nomeados
+# def multiplicar(*args):
+#     total = 1
+#     for numero in args:
+#         total *= numero
+#     return total
+
+# teste = multiplicar(10, 20, 45)
+# print(teste)
+
+# def verfica(x):
+#     return print(f'O número {x} é par') if x % 2 == 0 else print(f'O número {x} é ímpar')
+#     # if x % 2 == 0:
+#     #     return print('O número é par')
+#     # else:
+#     #     return print('O número é ímpar')
+
+
+# teste_2 = verfica(568476841654684864)
+
+pessoa = {}
+
+pessoa['nome'] = 'Fernando'
+pessoa['Sobrenome'] = 'Sousa'
+pessoa['Idade'] = 37
+
+
+# print(pessoa)
+# print()
+
+# print(pessoa['Idade'])
+# print(pessoa['Idade1'])
+
+print(pessoa.items(), type(pessoa))
+
+d1 = ['a', 'b','c']
+
+d2 = d1
+
+print()
+print(d1.reverse())
+print(d2)
