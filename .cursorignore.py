@@ -250,11 +250,11 @@
 
 # teste_2 = verfica(568476841654684864)
 
-pessoa = {}
+# pessoa = {}
 
-pessoa['nome'] = 'Fernando'
-pessoa['Sobrenome'] = 'Sousa'
-pessoa['Idade'] = 37
+# pessoa['nome'] = 'Fernando'
+# pessoa['Sobrenome'] = 'Sousa'
+# pessoa['Idade'] = 37
 
 
 # print(pessoa)
@@ -263,12 +263,114 @@ pessoa['Idade'] = 37
 # print(pessoa['Idade'])
 # print(pessoa['Idade1'])
 
-print(pessoa.items(), type(pessoa))
+# print(pessoa.items(), type(pessoa))
 
-d1 = ['a', 'b','c']
+# d1 = ['a', 'b','c']
 
-d2 = d1
+# d2 = d1
 
-print()
-print(d1.reverse())
-print(d2)
+# print()
+# print(d1.reverse())
+# print(d2)
+
+
+# def multiplica (*numeros):
+#     total = 1
+#     for meu_numero in numeros:
+#         total *= meu_numero
+#     return print(f'A multiplicação resulta em {total}')
+
+# multiplica(1,2,3,5)
+
+# print()
+
+# def par_impar(x):
+#     if x % 2 == 0:
+#         return print(f'O número {x} é par')
+#     return print(f'O número {x} é ímpar')
+
+
+# par_impar(2312341243125)
+# print()
+
+
+# def multiplica(x):
+    
+###
+
+
+
+# perguntas = [
+#     {
+#         'Pergunta': 'Quanto é 2+2?',
+#         'Opções': ['1', '3', '4', '5'],
+#         'Resposta': '4',
+#     },
+#     {
+#         'Pergunta': 'Quanto é 5*5?',
+#         'Opções': ['25', '55', '10', '51'],
+#         'Resposta': '25',
+#     },
+#     {
+#         'Pergunta': 'Quanto é 10/2?',
+#         'Opções': ['4', '5', '2', '1'],
+#         'Resposta': '5',
+#     },
+# ]
+
+
+
+# qtd_acertos = 0
+# for pergunta in perguntas:
+#     print('Pergunta: ', pergunta['Pergunta'])
+#     print()
+
+#     opcoes = pergunta['Opções']
+
+#     for i, opcao in enumerate(opcoes):
+#         print(f'{i}) {opcao}')
+#     print()
+
+ 
+#     escolha = input('Escolha uma opção: ')
+    
+#     acertou = False
+#     escolha_int = None
+#     qtd_opcoes = len(opcoes)
+
+#     if escolha.isdigit:
+#         escolha_int = int(escolha)
+    
+#     if escolha_int is not None:
+#         if escolha_int >= 0 and escolha_int < qtd_opcoes:
+#             if opcoes[escolha_int] == pergunta['Resposta']:
+#                 acertou = True
+
+#     print()
+#     # qtd_acerto = 0
+#     if acertou:
+#         qtd_acertos += 1
+#         print('Você acertou  ❤️')
+#         print()
+#     else:
+#         print('Você Errou 🤯')
+#   print()
+
+# print(f'Você acertou {qtd_acertos} de '), len(perguntas), (f'perguntas')
+
+    # break
+
+    
+
+# lista = [
+# (x,y,z)
+# for x in range(2)
+# for y in range(4)
+# for z in range(5)
+# ]
+
+# print(lista) 
+
+import sys
+
+print(sys.platform)
